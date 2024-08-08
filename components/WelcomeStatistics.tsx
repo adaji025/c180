@@ -29,7 +29,7 @@ const WelcomeStatistics = ({ posts, comments, albums, photos }: IProps) => {
         <div className="p-5 bg-darkColor rounded-xl">
           <BatteryIcon />
           <div className="font-semibold mt-4">{totalComments}</div>
-          <div className="text-[10px] font-medium mt-2">TotaTotal Comments</div>
+          <div className="text-[10px] font-medium mt-2">Total Comments</div>
         </div>
         <div className="p-5 bg-darkColor rounded-xl">
           <AlbumIcon />

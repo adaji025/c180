@@ -27,6 +27,16 @@ const PostInsights = () => {
           colors: "#fff",
         },
       },
+      categories: [
+        "Leanne",
+        "Ervin",
+        "Clementine",
+        "Patricia",
+        "Chelsey",
+        "Schulist",
+        "Kurtis",
+        "Nicholas",
+      ],
     },
     yaxis: {
       labels: {
@@ -47,16 +57,12 @@ const PostInsights = () => {
         stops: [0, 100],
       },
     },
-    // colors: [ "rgba(169, 223, 216, 0.01)"],
   };
 
   const series = [
     {
       name: "",
-      data: [
-        31, 40, 28, 51, 42, 51, 42, 10, 109, 31, 40, 28, 51, 42, 109, 31, 40,
-        28, 51, 42, 109, 31, 40, 28,
-      ],
+      data: [31, 40, 28, 51, 42, 51, 42, 10],
     },
   ];
   return (
