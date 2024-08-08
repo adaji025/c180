@@ -16,7 +16,7 @@ const WelcomeStatistics = ({ posts, comments, albums, photos }: IProps) => {
   const totalAlbums = albums?.length;
   const totalPhotos = photos?.length;
   return (
-    <div className="bg-primary px-5 py-7 rounded-[10px]  w-4/6">
+    <div className="bg-primary px-5 py-7 rounded-[10px]  md:w-4/6">
       <div className="font-semibold">Welcome, Jonas!</div>
       <div className="text-[10px] font-medium text-grayColor">Summary</div>
 

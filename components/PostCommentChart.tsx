@@ -9,11 +9,11 @@ const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 const PostCommentChart = () => {
   const series = [
     {
-      name: "PRODUCT A",
+      name: "comments",
       data: [44, 55, 41, 67, 5],
     },
     {
-      name: "PRODUCT B",
+      name: "Posts",
       data: [13, 23, 20, 8, 6],
     },
   ];
