@@ -23,8 +23,8 @@ Make sure you have the following installed on your local machine:
 
 - [Node.js](https://nodejs.org/) (v14 or later)
 - [npm](https://www.npmjs.com/) (comes with Node.js) or [yarn](https://yarnpkg.com/)
-- [Documentation](https://mantine.dev)
-- [Documentation](https://tailwindcss.com/docs/guides/nextjs)
+- [Documentation](https://mantine.dev) (mantine is  react ui library)
+- [Documentation](https://tailwindcss.com/docs/guides/nextjs) (Tailwind is a css library)
 
 # Mantine Next
 
