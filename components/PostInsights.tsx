@@ -65,7 +65,7 @@ const PostInsights = () => {
   const series = [
     {
       name: "",
-      data: [31, 40, 28, 51, 42, 51, 42, 10],
+      data: [14, 20, 80, 19, 42, 1, 42, 10],
     },
   ];
   return (
