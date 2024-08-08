@@ -1,11 +1,11 @@
 import { useFetch } from "@mantine/hooks";
 import { PostTypes } from "../types/posts";
-import SearchInput from "./components/_core/SearchInput";
-import PostCommentChart from "./components/PostCommentChart";
-import PostInsights from "./components/PostInsights";
-import TodoChart from "./components/TodoChart";
-import TopUsers from "./components/TopUsers";
-import WelcomeStatistics from "./components/WelcomeStatistics";
+import SearchInput from "../components/_core/SearchInput";
+import PostCommentChart from "../components/PostCommentChart";
+import PostInsights from "../components/PostInsights";
+import TodoChart from "../components/TodoChart";
+import TopUsers from "../components/TopUsers";
+import WelcomeStatistics from "../components/WelcomeStatistics";
 import { UsersTypes } from "../types/users";
 import { apiUrl } from "../apiLog";
 import { CommentsTypes } from "../types/comment";
