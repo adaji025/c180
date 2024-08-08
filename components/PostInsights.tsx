@@ -21,7 +21,20 @@ const PostInsights = () => {
     stroke: {
       curve: "smooth",
     },
-    xaxis: {},
+    xaxis: {
+      labels: {
+        style: {
+          colors: "#fff",
+        },
+      },
+    },
+    yaxis: {
+      labels: {
+        style: {
+          colors: "#fff",
+        },
+      },
+    },
     grid: {
       show: false,
     },
