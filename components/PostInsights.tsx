@@ -57,6 +57,9 @@ const PostInsights = () => {
         stops: [0, 100],
       },
     },
+    tooltip: {
+      theme: "dark",
+    },
   };
 
   const series = [
