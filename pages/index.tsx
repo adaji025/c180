@@ -44,7 +44,7 @@ export default function IndexPage({ posts }: { posts: PostTypes[] }) {
         <TopUsers />
         <div className="mt-5 flex flex-col md:flex-row gap-5">
           <TodoChart />
-          <PostInsights />
+          <PostInsights users={users} />
         </div>
       </div>
     </div>

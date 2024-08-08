@@ -1,9 +1,15 @@
 import { ApexOptions } from "apexcharts";
 import dynamic from "next/dynamic";
 import React from "react";
+import { UsersTypes } from "../types/users";
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
-const PostInsights = () => {
+interface IProps {
+  users: UsersTypes[] | null;
+}
+const PostInsights = ({ users }: IProps) => {
+  const userNames = users?.slice(0, 8).map((item) => item.name.split(" ")[0]);
+  
   const options: ApexOptions = {
     chart: {
       height: 150,
@@ -27,16 +33,17 @@ const PostInsights = () => {
           colors: "#fff",
         },
       },
-      categories: [
-        "Leanne",
-        "Ervin",
-        "Clementine",
-        "Patricia",
-        "Chelsey",
-        "Schulist",
-        "Kurtis",
-        "Nicholas",
-      ],
+      // categories: [
+      //   "Leanne",
+      //   "Ervin",
+      //   "Clementine",
+      //   "Patricia",
+      //   "Chelsey",
+      //   "Schulist",
+      //   "Kurtis",
+      //   "Nicholas",
+      // ],
+      categories: userNames || [],
     },
     yaxis: {
       labels: {

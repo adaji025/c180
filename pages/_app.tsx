@@ -3,7 +3,7 @@ import Head from "next/head";
 import { MantineProvider } from "@mantine/core";
 import { theme } from "../theme";
 import { AppProps } from "next/app";
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
 import "../styles/global.css";
 
 const inter = Inter({
