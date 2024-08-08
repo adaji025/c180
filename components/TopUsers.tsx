@@ -36,7 +36,7 @@ const TopUsers = () => {
     },
   ];
   return (
-    <div className="bg-primary px-5 py-7 rounded-[10px]  w-full mt-10">
+    <div className="bg-primary px-5 py-7 rounded-[10px]  w-full mt-5">
       <div className="font-semibold mb-5">Top Users by Albums</div>
       <Table>
         <Table.Thead>
@@ -61,7 +61,7 @@ const TopUsers = () => {
                 <div className="flex justify-end">
                   <button
                     style={{ borderColor: item.color, color: item.color }}
-                    className={`min-w-[57px] border border-[${item.color}]  rounded-md`}
+                    className={`p-1 min-w-[57px] border border-[${item.color}]  rounded-md`}
                   >
                     {item.photos}
                   </button>

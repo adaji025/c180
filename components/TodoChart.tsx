@@ -1,9 +1,10 @@
 import { ApexOptions } from "apexcharts";
 import dynamic from "next/dynamic";
 import React from "react";
+
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
-const TodoChart = () => {
+const TodoChart: React.FC = () => {
   const series = [80];
   const options: ApexOptions = {
     chart: {
@@ -20,18 +21,22 @@ const TodoChart = () => {
       radialBar: {
         startAngle: -90,
         endAngle: 90,
+        hollow: {
+          margin: 10, // Margin between the inner and outer circle
+          size: "50%", // Size of the inner circle
+        },
         track: {
-          background: "#e7e7e7",
-          strokeWidth: "97%",
+          background: "#2B2B36",
+          strokeWidth: "100%",
           margin: 5,
-          dropShadow: {
-            enabled: true,
-            top: 2,
-            left: 0,
-            color: "#999",
-            opacity: 1,
-            blur: 2,
-          },
+          // dropShadow: {
+          //   enabled: true,
+          //   top: 2,
+          //   left: 0,
+          //   color: "#999",
+          //   opacity: 1,
+          //   blur: 2,
+          // },
         },
         dataLabels: {
           name: {
@@ -39,7 +44,9 @@ const TodoChart = () => {
           },
           value: {
             offsetY: -2,
-            fontSize: "22px",
+            fontSize: "24px",
+            color: "#fff",
+            fontWeight: "bold",
           },
         },
       },
@@ -49,14 +56,16 @@ const TodoChart = () => {
         top: -10,
       },
     },
-
     labels: ["Average Results"],
+    colors: ["#A9DFD8"],
   };
 
   return (
-    <div className="bg-primary px-5 py-7 rounded-[10px]  flex-1">
+    <div className="bg-primary px-5 py-7 rounded-[10px] flex-1">
       <div className="font-semibold mb-2">Todo</div>
       <div className="text-xs text-grayColor mt-2">Total Todos</div>
+      <div className="mt-2 font-bold text-xl text-[#A9DFD8]">200</div>
+      <div className="text-xs text-grayColor mt-2">Completed Todos / Total</div>
       <div className="mt-5">
         <Chart
           options={options}

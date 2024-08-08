@@ -50,7 +50,7 @@ const PostInsights = () => {
     <div className="bg-primary px-5 py-7 rounded-[10px]  w-4/6">
       <div className="font-semibold mb-2">Post Insights</div>
       <div className="mt-10">
-        <Chart options={options} series={series} type="area" height={250} />
+        <Chart options={options} series={series} type="area" height={200} />
       </div>
     </div>
   );

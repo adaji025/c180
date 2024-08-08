@@ -32,7 +32,7 @@ export default function IndexPage({ posts }: { posts: PostTypes[] }) {
       <div className="max-w-[1000px] mx-auto px-6 lg:px-10 placeholder:text-xs">
         <SearchInput onSearch={() => {}} />
 
-        <div className="mt-10 flex gap-10">
+        <div className="mt-5 flex gap-5">
           <WelcomeStatistics
             posts={posts}
             comments={comments}
@@ -42,7 +42,7 @@ export default function IndexPage({ posts }: { posts: PostTypes[] }) {
           <PostCommentChart />
         </div>
         <TopUsers />
-        <div className="mt-10 flex gap-10">
+        <div className="mt-5 flex gap-5">
           <TodoChart />
           <PostInsights />
         </div>
