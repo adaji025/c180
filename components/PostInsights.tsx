@@ -9,7 +9,7 @@ interface IProps {
 }
 const PostInsights = ({ users }: IProps) => {
   const userNames = users?.slice(0, 8).map((item) => item.name.split(" ")[0]);
-  
+
   const options: ApexOptions = {
     chart: {
       height: 150,
@@ -33,16 +33,6 @@ const PostInsights = ({ users }: IProps) => {
           colors: "#fff",
         },
       },
-      // categories: [
-      //   "Leanne",
-      //   "Ervin",
-      //   "Clementine",
-      //   "Patricia",
-      //   "Chelsey",
-      //   "Schulist",
-      //   "Kurtis",
-      //   "Nicholas",
-      // ],
       categories: userNames || [],
     },
     yaxis: {
