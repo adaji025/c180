@@ -4,7 +4,7 @@ import React from "react";
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 const TodoChart = () => {
-  const series = [76];
+  const series = [80];
   const options: ApexOptions = {
     chart: {
       type: "radialBar",

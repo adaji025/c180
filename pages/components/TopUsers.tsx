@@ -40,7 +40,7 @@ const TopUsers = () => {
       <div className="font-semibold mb-5">Top Users by Albums</div>
       <Table>
         <Table.Thead>
-          <Table.Tr className="border-0">
+          <Table.Tr className="border-0 text-grayColor text-[13px">
             <Table.Th>#</Table.Th>
             <Table.Th>Name</Table.Th>
             <Table.Th>Photos</Table.Th>
@@ -51,7 +51,7 @@ const TopUsers = () => {
         </Table.Thead>
         <Table.Tbody>
           {dummyData.map((item: IProps, i) => (
-            <Table.Tr key={item.name} className="border-0">
+            <Table.Tr key={item.name} className="border-0 text-[10px]">
               <Table.Td>{i}</Table.Td>
               <Table.Td>{item.name}</Table.Td>
               <Table.Td>

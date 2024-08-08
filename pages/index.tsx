@@ -7,7 +7,9 @@ import TodoChart from "./components/TodoChart";
 import TopUsers from "./components/TopUsers";
 import WelcomeStatistics from "./components/WelcomeStatistics";
 import { UsersTypes } from "../types/users";
-import { apiUrl } from "./apiLog";
+import { apiUrl } from "../apiLog";
+import { CommentsTypes } from "../types/comment";
+import { AlbumTypes, Photostypes } from "../types/album";
 
 export async function getStaticProps() {
   const res = await fetch(`${apiUrl}/posts`);
@@ -20,19 +22,23 @@ export async function getStaticProps() {
   };
 }
 export default function IndexPage({ posts }: { posts: PostTypes[] }) {
-  const {
-    data: users,
-    loading,
-    error,
-  } = useFetch<UsersTypes[]>("https://api.example.com/users");
+  const { data: users } = useFetch<UsersTypes[]>(`${apiUrl}/users`);
+  const { data: comments } = useFetch<CommentsTypes[]>(`${apiUrl}/comments`);
+  const { data: albums } = useFetch<AlbumTypes[]>(`${apiUrl}/albums`);
+  const { data: photos } = useFetch<Photostypes[]>(`${apiUrl}/photos`);
 
   return (
     <div className="bg-[#171821] text-white min-h-screen py-5">
-      <div className="max-w-[1200px] mx-auto px-6 lg:px-10 placeholder:text-xs">
+      <div className="max-w-[1000px] mx-auto px-6 lg:px-10 placeholder:text-xs">
         <SearchInput onSearch={() => {}} />
 
         <div className="mt-10 flex gap-10">
-          <WelcomeStatistics posts={posts} />
+          <WelcomeStatistics
+            posts={posts}
+            comments={comments}
+            albums={albums}
+            photos={photos}
+          />
           <PostCommentChart />
         </div>
         <TopUsers />
