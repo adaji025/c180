@@ -1,6 +1,7 @@
-import { AlbumTypes, Photostypes } from "../../types/album";
-import { CommentsTypes } from "../../types/comment";
-import { PostTypes } from "../../types/posts";
+
+import { AlbumTypes, Photostypes } from "../types/album";
+import { CommentsTypes } from "../types/comment";
+import { PostTypes } from "../types/posts";
 import { AlbumIcon, BatteryIcon, PhotosIcon, TotalPostIcon } from "./_core/svg";
 
 interface IProps {
