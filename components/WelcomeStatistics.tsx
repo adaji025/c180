@@ -20,7 +20,7 @@ const WelcomeStatistics = ({ posts, comments, albums, photos }: IProps) => {
       <div className="font-semibold">Welcome, Jonas!</div>
       <div className="text-[10px] font-medium text-grayColor">Summary</div>
 
-      <div className="mt-5 grid grid-cols-4 gap-5  w-full">
+      <div className="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-5  w-full">
         <div className="p-5 bg-darkColor rounded-xl">
           <TotalPostIcon />
           <div className="font-semibold mt-4">{totalPost}</div>
